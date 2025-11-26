@@ -8,7 +8,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Poppins', sans-serif;
 }
 
 p, li, a {
@@ -581,4 +581,5 @@ body.dark-mode .my-btn:hover {
 .description {
     line-height: 1.5;
     font-size: smaller;
+
 }

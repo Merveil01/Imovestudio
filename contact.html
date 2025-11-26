@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+Name: Merveil Lumbe
+project Name: Imove Studio - Sport website
+-->
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="witdh=device-witdh, initial-scale=1">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title> Contact-Imove Studio </title>
+
+   <!--Favicon-->
+    <link href="Assets/images/favicon.png" rel="icon">
+    <link href="Assets/images/favicon.png" rel="apple-touch-icon">
+    
+
+         <!--Animation https://animate.style/#attention_seeker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!--Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+    <!--Google font-->
+    <link rel="stylesheet" href="Assets/fonts/fontawesome/css/all.min.css">
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link href="Assets/CSS/hover/hover-min.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+    <div class="top-fixed-img"></div>
+     <button id="darkModeToggle" class="my-btn"><i class="fa-regular fa-moon"></i> Night Mode</button>
+
+        <div class="box-1 animate__animated animate__fadeInLeft">
+		     <a href="imovestudio.html"><img src="Assets/images/logo.png" Class="logo"></a>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger">
+                 <i class="fa-solid fa-bars"></i>
+            </div>
+          <!-- Menu List -->
+         <ul class="nav-menu">
+			     <li><a class="home" aria-current="page" href="imovestudio.html">Home</a></li>
+			     <li><a class="about" href="about.html">About</a></li>
+				   <li><a class="Class" href="class.html">Class</a></li>
+				   <li><a class="current" href="contact.html">Contact</a></li>
+			   </ul>
+        </div>
+      
+        
+
+   <div class="container-4">
+     
+     <div class="box-14 animate__animated animate__fadeInRight">
+         <form class="subscribe-form">
+              <h2>Get in touch today!</h2>
+                    <p class="description">
+                       At Imove Studio, we believe every movement counts. Whether you're just starting your fitness journey or pushing toward new goals, we're here to support you. Have a question, want to join a class, or need guidance? Get in touch today — let's move forward together!
+                   </p>
+
+          <div class="input-group">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+              <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Patrick Mc donnel...">
+           </div>
+           <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+           </div>
+           <div class="mb-3">
+               <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+           </div>
+           <div><button type="submit">Subscribe</button></div>
+          </div>
+         </form>
+     </div>
+    
+   </div>
+
+   <div class="footer-fixed"></div>
+      <footer class="footer">
+         <p>© 2025 Imove Studio. All rights reserved.</p>
+      </footer>
+    <!-- Javascript for menu -->
+   <script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.onclick = () => {
+        navMenu.classList.toggle("active");
+    };
+    </script>
+
+    <script>
+    const darkModeToggle = document.getElementById("darkModeToggle");
+    const body = document.body;
+
+    darkModeToggle.onclick = () => {
+    body.classList.toggle("dark-mode");
+
+    // Optional: change button text
+    if(body.classList.contains("dark-mode")) {
+        darkModeToggle.textContent = "☀️ Light Mode";
+    } else {
+        darkModeToggle.textContent = "🌙 Night Mode";
+    }
+    };
+    </script>
+
+
+</body>
+</html>

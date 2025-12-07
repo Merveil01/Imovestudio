@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--
+Name: Merveil Lumbe
+project Name: Imove Studio - Sport website
+-->
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="witdh=device-witdh, initial-scale=1">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title> Contact-Imove Studio </title>
+
+   <!--Favicon-->
+    <link href="Assets/images/favicon.png" rel="icon">
+    <link href="Assets/images/favicon.png" rel="apple-touch-icon">
+
+    <!--Fonts family link-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+    <!--Animation https://animate.style/#attention_seeker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!--Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+    <!--Google font-->
+    <link rel="stylesheet" href="Assets/fonts/fontawesome/css/all.min.css">
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link href="Assets/CSS/hover/hover-min.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+    <div class="top-fixed-img"></div>
+     <button id="darkModeToggle" class="my-btn"><i class="fa-regular fa-moon"></i> Night Mode</button>
+
+        <div class="box-1 animate__animated animate__fadeInLeft">
+		     <a href="imovestudio.html"><img src="Assets/images/logo.png" Class="logo"></a>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger">
+                 <i class="fa-solid fa-bars"></i>
+            </div>
+          <!-- Menu List -->
+         <ul class="nav-menu">
+			     <li><a class="home" href="imovestudio.html">Home</a></li>
+			     <li><a class="current" href="about.html">About</a></li>
+				   <li><a class="Class" href="class.html">Class</a></li>
+				   <li><a href="contact.html">Contact</a></li>
+			   </ul>
+        </div>
+      
+    <section class="container py-5 animate__animated animate__fadeInUp">
+        <div class="row align-items-center">
+
+            <!-- LEFT IMAGE -->
+            <div class="col-lg-6 mb-4"><br><br>
+                <img src="Assets/images/about-gym.jpg" class="img-fluid rounded shadow" alt="Gym Image">
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="col-lg-6">
+                <h1 class="fw-bold" style="color:#7033CC;">About Imove Studio</h1>
+                <p class="mt-3">
+                    Imove Studio is more than a fitness centre — it is a community built on movement, discipline, 
+                    and personal transformation. Whether you are a beginner starting your wellness journey or an 
+                    experienced athlete, our studio provides the training, support, and atmosphere needed to help 
+                    you grow.
+                </p>
+
+                <p>
+                    We specialise in "Yoga", "Strength Training", "Flexibility Coaching", and "Fat-burning classes".
+                    Our trainers are certified, experienced, and passionate about guiding you from Day 1.
+                </p>
+
+                <ul class="mt-3">
+                    <li>✔ Expert Yoga & Meditation Coaching</li>
+                    <li>✔ Modern Gym Equipment</li>
+                    <li>✔ Personal Training Sessions</li>
+                    <li>✔ Motivating Fitness Community</li>
+                    <li>✔ Classes for all ages & levels</li>
+                </ul>
+
+                <a href="class.html" class="btn btn-primary mt-4 px-4 py-2" style="border-radius: 30px; background:#7033CC; border: none;">
+                    Explore Our Classes
+                </a>
+            </div>
+        </div>
+
+        <!-- SECOND ROW -->
+        <div class="row mt-5 text-center">
+
+            <h2 class="fw-bold" style="color:#7033CC;">Why Choose Imove Studio?</h2>
+
+            <div class="col-md-4 mt-4">
+                <div class="p-4 shadow rounded">
+                    <i class="fa-solid fa-dumbbell fa-3x mb-3" style="color:#7033CC;"></i>
+                    <h4>Professional Trainers</h4>
+                    <p>Work with certified experts who guide you safely and effectively.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mt-4">
+                <div class="p-4 shadow rounded">
+                    <i class="fa-solid fa-heart-pulse fa-3x mb-3" style="color:#7033CC;"></i>
+                    <h4>Holistic Approach</h4>
+                    <p>Your physical and mental well-being comes first at our studio.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mt-4">
+                <div class="p-4 shadow rounded">
+                    <i class="fa-solid fa-users fa-3x mb-3" style="color:#7033CC;"></i>
+                    <h4>Strong Community</h4>
+                    <p>Feel supported, motivated, and empowered with every session.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+   <div class="footer-fixed"></div>
+      <footer class="footer">
+         <p>© 2025 Imove Studio. All rights reserved.</p>
+      </footer>
+
+    <!-- Javascript for menu -->
+   <script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.onclick = () => {
+        navMenu.classList.toggle("active");
+    };
+    </script>
+
+    <script>
+    const darkModeToggle = document.getElementById("darkModeToggle");
+    const body = document.body;
+
+    darkModeToggle.onclick = () => {
+    body.classList.toggle("dark-mode");
+
+    // Optional: change button text
+    if(body.classList.contains("dark-mode")) {
+        darkModeToggle.textContent = "☀️ Light Mode";
+    } else {
+        darkModeToggle.textContent = "🌙 Night Mode";
+    }
+    };
+    </script>
+
+
+</body>
+</html>
